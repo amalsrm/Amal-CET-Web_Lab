@@ -1,0 +1,413 @@
+<html>
+<head></head>
+<style>
+div{
+   padding:30px;
+   }
+</style>
+<body>
+<div>
+<center><h1 id="top">Web</h1></center>
+<br>
+<br>
+<hr>
+<ul>
+<Li><a href="#h2">Client/Server  concepts</a></li>
+<Li><a href="#h3">Components  of  Web  Application</a></li>
+<Li><a href="#h4">Types  of Web Content</a></li>
+<Li><a href="#h5">Overview of HTTP - HTTP request – response</a></li>
+<Li><a href="#h6">Generation of dynamic web pages</a></li>
+<Li><a href="#h7">Application Server</a></li>
+<Li><a href="#h8">Web Security</a></li>
+</ul>
+<br>
+<h2 id="h1">World Wide Web</h2>
+From Wikipedia, the free encyclopedia
+Jump to navigation
+Jump to search
+"WWW" and "The Web" redirect here. For other uses of WWW, see WWW (disambiguation). For uses of web, see Web (disambiguation).
+For the first web software, see WorldWideWeb.
+Not to be confused with the Internet.
+A web page displayed in a web browser
+A global map of the Web Index for countries in 2014
+The World Wide Web (WWW), commonly known as the Web, is an information system where documents and other web resources are identified by Uniform Resource Locators (URLs, such as http://example.com/), which may be interlinked by hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by users by a software application called a web browser, and are published by a software application called a web server. The World Wide Web is not synonymous with the Internet, which pre-dated the Web in some form by over two decades and upon the technologies of which the Web is built.
+
+English scientist Tim Berners-Lee invented the World Wide Web in 1989. He wrote the first web browser in 1990 while employed at CERN near Geneva, Switzerland.[3][4] The browser was released outside CERN to other research institutions starting in January 1991, and then to the general public in August 1991. The Web began to enter everyday use in 1993–4, when websites for general use started to become available.[5] The World Wide Web has been central to the development of the Information Age, and is the primary tool billions of people use to interact on the Internet.[6][7][8][9][10]
+
+Web resources may be any type of downloaded media, but web pages are hypertext documents formatted in Hypertext Markup Language (<a href="#h5">HTTP</a>).[11] Special HTML syntax displays embedded hyperlinks with URLs which permits users to navigate to other web resources. In addition to text, web pages may contain references to images, video, audio, and software components which are either displayed or internally executed in the user's web browser to render pages or streams of multimedia content.
+
+Multiple web resources with a common theme and usually a common domain name make up a website. Websites are stored in computers that are running a web server, which is a program that responds to requests made over the Internet from web browsers running on a user's computer. Website content can be provided by a publisher, or interactively from user-generated content. Websites are provided for a myriad of informative, entertainment, commercial, and governmental reasons.
+<a href="#top">Go top</a><br>
+<h2 id="h2">Client-Server Model</h2>
+
+The client-server model, or client-server architecture, is a distributed application framework dividing tasks between servers and clients, which either reside in the same system or communicate through a computer network or the Internet. The client relies on sending a request to another program in order to access a service made available by a server. The server runs one or more programs that share resources with and distribute work among clients.
+
+The client server relationship communicates in a request–response messaging pattern and must adhere to a common communications protocol, which formally defines the rules, language, and dialog patterns to be used. Client-server communication typically adheres to the TCP/IP protocol suite.
+
+TCP protocol maintains a connection until the client and server have completed the message exchange. TCP protocol determines the best way to distribute application data into packets that networks can deliver, transfers packets to and receives packets from the network, and manages flow control and retransmission of dropped or garbled packets. IP is a connectionless protocol in which each packet traveling through the Internet is an independent unit of data unrelated to any other data units.
+<br>
+<center><img src="Client-server-model.svg.png" height="300px" width="400px"></center>
+<br>
+
+Client requests are organized and prioritized in a scheduling system, which helps servers cope in the instance of receiving requests from many distinct clients in a short space of time. The client-server approach enables any general-purpose computer to expand its capabilities by utilizing the shared resources of other hosts. Popular client-server applications include email, the World Wide Web, and network printing.
+What is the Client-Server Model?
+
+The client-server model, or client-server architecture, is a distributed application framework dividing tasks between servers and clients, which either reside in the same system or communicate through a computer network or the Internet. The client relies on sending a request to another program in order to access a service made available by a server. The server runs one or more programs that share resources with and distribute work among clients.
+
+The client server relationship communicates in a request–response messaging pattern and must adhere to a common communications protocol, which formally defines the rules, language, and dialog patterns to be used. Client-server communication typically adheres to the TCP/IP protocol suite.
+
+TCP protocol maintains a connection until the client and server have completed the message exchange. TCP protocol determines the best way to distribute application data into packets that networks can deliver, transfers packets to and receives packets from the network, and manages flow control and retransmission of dropped or garbled packets. IP is a connectionless protocol in which each packet traveling through the Internet is an independent unit of data unrelated to any other data units.
+
+Client requests are organized and prioritized in a scheduling system, which helps servers cope in the instance of receiving requests from many distinct clients in a short space of time. The client-server approach enables any general-purpose computer to expand its capabilities by utilizing the shared resources of other hosts. Popular client-server applications include email, the World Wide Web, and network printing.
+<br>
+<h2 id="h3">Components of Web</h2>
+What are Web Components?
+
+Web components are basically platform agnostic components that are written in a way that they have the actual style encapsulations. Almost all modern JavaScript frameworks support web components. You can check this website by Rob Dodson to find out if the framework you are using today supports web components or not.
+
+Web components consist of three main technologies:
+
+    HTML template
+    Custom elements
+    Shadow DOM
+
+Previously, HTML imports were also a part of it, but with ES6 modules, HTML imports became deprecated. The Polymer team is working on an HTML Module to provide the ability to load an HTML template into JavaScript code.
+
+So let’s go through each of these three technologies together.
+HTML Template
+
+You may already be familiar with the template concept. It is mostly useful once you have a part of your HTML that needs to be repeated multiple times. Imagine you are going to make a contact list and you need to create a contact card for each of your contacts. In this case, it totally makes sense to create a template for your contact card and reuse it.
+
+Template tags give you the possibility of creating a block of HTML and, with the help of JavaScript, add the content to it, clone it and then add it to the DOM.
+
+The benefit of using HTML tags is that browsers are going to parse them but not render them. You need to manually clone the template and attach it to the DOM. In this way, you boost the performance, because no matter how many times you clone the template, add the content to it, and attach it to the DOM, browsers are going to parse the template once.
+
+Let’s look at the following example:
+
+Here is our HTML template:
+
+Markup
+
+Here is our JavaScript:
+
+// Get reference to the template
+const template = document.querySelector('#contact-card-template');
+
+// Add the first name
+const info = template.content.querySelector("#name");
+info.textContent = "Sherry";
+
+// Add the first email
+const info = template.content.querySelector("#email");
+info.textContent = "sherry@berry.com";
+
+// Clone the new card and add it to the DOM
+const imageGallery = document.querySelector("#contacts");
+const clone = document.importNode(template.content, true);
+imageGallery.appendChild(clone);
+
+JavaScript
+
+You can find the code on StackBlitz.
+Custom Elements
+
+With custom elements, developers gain the ability to create their own DOM elements. In other words, they can define new HTML elements. These elements can either be totally new elements, which means that they extend the HTMLElement interface, or extend one of the existing HTML elements.
+
+It’s also possible to inherit from one of the existing elements. But normally that’s not the recommended way to create an element. If you decide to inherit from a native element, you should keep in mind thWhat are Web Components?
+
+Web components are basically platform agnostic components that are written in a way that they have the actual style encapsulations. Almost all modern JavaScript frameworks support web components. You can check this website by Rob Dodson to find out if the framework you are using today supports web components or not.
+
+Web components consist of three main technologies:
+
+    HTML template
+    Custom elements
+    Shadow DOM
+There are a lot of factors that go into <a href="#h8">web security</a> and web protection. Any website or application that is secure is surely backed by different types of checkpoints and techniques for keeping it safe.
+
+There are a variety of security standards that must be followed at all times, and these standards are implemented and highlighted by the OWASP. Most experienced web developers from top cybersecurity companies will follow the standards of the OWASP as well as keep a close eye on the Web Hacking Incident Database to see when, how, and why different people are hacking different websites and services.You can Click here to view the <a href="#h4">Types  of Web Content</a> 
+Essential steps in protecting web apps from attacks include applying up-to-date encryption, setting proper authentication, continuously patching discovered vulnerabilities, avoiding data theft by having secure software development practices. The reality is that clever attackers may be competent enough to find flaws even in a fairly robust secured environment, and so a holistic security strategy is advised.
+Previously, HTML imports were also a part of it, but with ES6 modules, HTML imports became deprecated. The Polymer team is working on an HTML Module to provide the ability to load an HTML template into JavaScript code.
+
+So let’s go through each of these three technologies together.
+HTML Template
+
+You may already be familiar with the template concept. It is mostly useful once you have a part of your HTML that needs to be repeated multiple times. Imagine you are going to make a contact list and you need to create a contact card for each of your contacts. In this case, it totally makes sense to create a template for your contact card and reuse it.
+
+Template tags give you the possibility of creating a block of HTML and, with the help of JavaScript, add the content to it, clone it and then add it to the DOM.
+
+The benefit of using HTML tags is that browsers are going to parse them but not render them. You need to manually clone the template and attach it to the DOM. In this way, you boost the performance, because no matter how many times you clone the template, add the content to it, and attach it to the DOM, browsers are going to parse the template once.
+
+Let’s look at the following example:
+
+Here is our HTML template:
+
+
+
+Markup
+
+Here is our JavaScript:
+
+// Get reference to the template
+const template = document.querySelector('#contact-card-template');
+
+// Add the first name
+const info = template.content.querySelector("#name");
+info.textContent = "Sherry";
+
+// Add the first email
+const info = template.content.querySelector("#email");
+info.textContent = "sherry@berry.com";
+
+// Clone the new card and add it to the DOM
+const imageGallery = document.querySelector("#contacts");
+const clone = document.importNode(template.content, true);
+imageGallery.appendChild(clone);
+
+JavaScript
+
+You can find the code on StackBlitz.
+Custom Elements
+
+With custom elements, developers gain the ability to create their own DOM elements. In other words, they can define new HTML elements. These elements can either be totally new elements, which means that they extend the HTMLElement interface, or extend one of the existing HTML elements.
+
+It’s also possible to inherit from one of the existing elements. But normally that’s not the recommended way to create an element. If you decide to inherit from a native element, you should keep in mind that your element should support all the native APIs of the element you are inheriting from. This can be quite complicated, because just imagine how many types an <input> tag can support.
+Create New HTML Elements
+
+In order to create a totally new HTML element all you need to do is to create a class which extends HTMLElement and then define your own custom tag.
+
+See the example below:
+
+class FancyInputElement extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('fancyInput');
+    this.innerHTML = template.innerHTML;
+  }
+}
+
+customElements.define("fancy-input", FancyInputElement);
+
+JavaScript
+
+You can find the code on Stackblitz.
+Extend an Existing HTML Element
+
+In order to extend or upgrade a native element, you need to create a class which extends the native HTML element that you need, then define your own custom element. The difference from the previous case is that you need to add a third parameter to customElements.define and specify which native element you are extending. In order to tell the browser that you want to use this new behavior you need to use the ‘is’ attribute in your HTML.
+
+Here is a simple example of extending <a> tag.
+
+Inside connectedCallback():
+
+class FancyLinkElement extends HTMLAnchorElement {
+  connectedCallback() {
+    this.addEventListener("mouseover", e => {
+      this.setAttribute("style", "color:pink; font-style: bold;");
+    });
+
+    this.addEventListener("mouseout", e => {
+      this.setAttribute("style", "color:black; font-style: bold;");
+    });
+
+    this.addEventListener("click", e => {
+      this.target="_blank";
+    });
+    
+  }
+}
+
+customElements.define("fancy-link", FancyLinkElement,  { extends: "a" });
+
+JavaScrip
+
+Markup
+
+ 
+
+You can find the code on Stackblitz.
+Custom Element Lifecycle
+
+Because custom elements are extended, the HTMLElement interface comes with the following methods:
+
+    connectedCallback(): This method is automatically called as soon as the component is attached to the DOM. This is the best place to get hold of an element’s input attribute and define the rendering behavior
+    attributeChangedCallback(): This method is automatically called as soon as any of the input attributes of your element are changed
+    disconnectedCallback(): This method is automatically called when the custom element is disconnected from the document's DOM
+    adoptedCallback(): This method is automatically called when the custom element is moved to a new document
+
+Shadow DOM
+
+Shadow DOM allows you to encapsulate your component, so you make sure the component looks and behaves the same, no matter what happens in the global CSS. This means there won't be any style leak in or out of your component. at your element should support all the native APIs of the element you are inheriting from. This can be quite complicated, because just imagine how many types an  tag can support.
+Create New HTML Elements
+
+In order to create a totally new HTML element all you need to do is to create a class which extends HTMLElement and then define your own custom tag.
+
+See the example below:
+
+class FancyInputElement extends HTMLElement {
+  constructor() {
+    super();
+    const template = document.getElementById('fancyInput');
+    this.innerHTML = template.innerHTML;
+  }
+}
+
+customElements.define("fancy-input", FancyInputElement);
+
+JavaScript
+
+You can find the code on Stackblitz.
+Extend an Existing HTML Element
+
+In order to extend or upgrade a native element, you need to create a class which extends the native HTML element that you need, then define your own custom element. The difference from the previous case is that you need to add a third parameter to customElements.define and specify which native element you are extending. In order to tell the browser that you want to use this new behavior you need to use the ‘is’ attribute in your HTML.
+
+Here is a simple example of extending <a> tag.
+
+Inside connectedCallback():
+
+class FancyLinkElement extends HTMLAnchorElement {
+  connectedCallback() {
+    this.addEventListener("mouseover", e => {
+      this.setAttribute("style", "color:pink; font-style: bold;");
+    });
+
+    this.addEventListener("mouseout", e => {
+      this.setAttribute("style", "color:black; font-style: bold;");
+    });
+
+    this.addEventListener("click", e => {
+      this.target="_blank";
+    });
+    
+  }
+}
+
+customElements.define("fancy-link", FancyLinkElement,  { extends: "a" });
+
+JavaScript
+
+
+
+Markup
+
+ 
+
+You can find the code on Stackblitz.
+Custom Element Lifecycle
+
+Because custom elements are extended, the HTMLElement interface comes with the following methods:
+
+    connectedCallback(): This method is automatically called as soon as the component is attached to the DOM. This is the best place to get hold of an element’s input attribute and define the rendering behavior
+    attributeChangedCallback(): This method is automatically called as soon as any of the input attributes of your element are changed
+    disconnectedCallback(): This method is automatically called when the custom element is disconnected from the document's DOM
+    adoptedCallback(): This method is automatically called when the custom element is moved to a new document
+
+Shadow DOM
+
+Shadow DOM allows you to encapsulate your component, so you make sure the component looks and behaves the same, no matter what happens in the global CSS. This means there won't be any style leak in or out of your component. 
+<a href="#top">Go top</a><br>
+<h2 id="h4">Types of Web Content</h2><br>
+Web content is the textual, visual, or aural content that is encountered as part of the user experience on websites. It may include—among other things—text, images, sounds, videos, and animations.
+
+In Information Architecture for the World Wide Web, Lou Rosenfeld and Peter Morville write, "We define content broadly as 'the stuff in your Web site.' This may include documents, data, applications, e-services, images, audio and video files, personal Web pages, archived e-mail messages, and more. And we include future stuff as well as present stuff."
+
+Blog posts
+
+This website staple is a well-accepted and search-engine-optimizable medium for distributing narratives, personal perspectives, and information, usually presented in a story format. Ideally written to be quick and easy reads for your audiences, these types of blogs are sometimes written in first-person and often are enhanced with photos or other artwork. These brief narratives tend to gain wider appeal when not too lengthy or complex. As such, blogs are a great opportunity for sales managers, technical experts and communications officers to share experiences, perspectives or insights from day to day. While many blog posts are copy-heavy, the best types of blog posts include one or more images to tell the most engaging stories.
+Articles
+
+The next level up in complexity from blog posts, web articles tend to provide more time-sensitive, technical or newsworthy information for specific audiences. Often written with the assistance of one or more contributing sources, articles can help organizations build authority and thought-leadership. As such they may also contain embedded links to other web resources, both internal and external, to back up claims, attribute findings or allow readers to gain background knowledge of a term or event. Web articles also typically feature photography or artwork, to attract interest, add SEO functionality, and convey the information visually.
+Infographics
+
+One of the most popular types of website content these days, infographics provide a fast, customizable and fun way to tell a story visually, share statistics or show your products and services and how they work. They also can be used to illustrate a trend or concept that is difficult to photograph or put into words. As an added bonus, infographics are perfect for sharing on social media. Creating them does not need to be difficult or expensive, as there are numerous tools available these days to help you create infographics from statistics or sequential, cause-and-effect-type information, like Infogr.am and Canva. However, to make the most impact, you may want to consider enlisting help from a graphic designer to bring it to life.
+Online Polls or Surveys
+
+Similar to infographics, organizations can post brief, interactive, online surveys as an offbeat way to engage audiences, collect valuable tidbits of information and feedback, and trigger enlightening conversations in the industry. These sorts of surveys are intended to be both informative and fun, while also increasing the website user experience while allowing you to discover prospects’ expectations and concerns going forward. There is a range of services you can tap to easily build one of these surveys, such as Qualtrics. Incorporating the resulting survey tool into your website can be as simple as altering a few lines of code.
+Short Animations or GIFs
+
+Adding video to your website content strategy need not be limited to embedded YouTube or Vimeo videos. You can also build in shorter animations triggered in a number of ways, to show products or services as selected or in use. Hover animations begin playing when the viewer’s mouse moves over certain components on the site and can be used to show product options and operations. Background video offers movement and interest. And GIF-style animations are more straight forward presentations that allow you to convey sequential experiences far more efficiently than the written word.
+Slide Shows
+
+If you’d like to present a series of images showing a range of options as to how your products can be used, consider posting a slideshow to your website. As with the other types of content above, there are a myriad of tools available to help you create and customize your own slideshow for posting on your site. Like videos, slideshows can be uploaded to an external platform and then embedded in your site, or they can be built using a variety of applications and uploaded to your site. The keys here are optimizing file sizes so the show loads quickly, and selecting images that put your products and services in their best light.
+E-Books
+
+An e-book is similar to a slideshow in that it allows viewers to control the pace of information they digest, however it offers both copy and imagery to convey a story or educate prospects. Creating an e-book can be as simple as writing long-form content, then breaking it down into short sections that are designed into “pages” and optimized for viewing on both computer and mobile screens. While you may opt for outside help to write and/or design this type of asset, the end result should be a relatively simple, visually appealing, and responsive implementation that’s easy to host on your website. It can also be implemented as gated web content, requiring viewers to share a bit of information with you before they can access or download the asset.
+<a href="#top">Go top</a><br>
+<h2 id="h5">Overview of HTTP</h2>
+<br>
+The Hypertext Transfer Protocol (HTTP) is an application-level protocol for distributed, collaborative, hypermedia information systems. This is the foundation for data communication for the World Wide Web (i.e. internet) since 1990. HTTP is a generic and stateless protocol which can be used for other purposes as well using extensions of its request methods, error codes, and headers.
+
+Basically, HTTP is a TCP/IP based communication protocol, that is used to deliver data (HTML files, image files, query results, etc.) on the World Wide Web. The default port is TCP 80, but other ports can be used as well. It provides a standardized way for computers to communicate with each other. HTTP specification specifies how clients' request data will be constructed and sent to the server, and how the servers respond to these requests.
+Basic Features
+
+There are three basic features that make HTTP a simple but powerful protocol:
+
+    HTTP is connectionless: The HTTP <a href="#h2">client</a>, i.e., a browser initiates an HTTP request and after a request is made, the client waits for the response. The server processes the request and sends a response back after which client disconnect the connection. So client and server knows about each other during current request and response only. Further requests are made on new connection like client and server are new to each other.View the<Li><a href="#h7">Application Server</a></li>
+
+    HTTP is media independent: It means, any type of data can be sent by HTTP as long as both the client and the server know how to handle the data content. It is required for the client as well as the server to specify the content type using appropriate MIME-type.
+
+    HTTP is stateless: As mentioned above, HTTP is connectionless and it is a direct result of HTTP being a stateless protocol. The server and client are aware of each other only during a current request. Afterwards, both of them forget about each other. Due to this nature of the protocol, neither the client nor the browser can retain information between different requests across the web pages.
+<a href="#top">Go top</a>
+<br>
+<h2 id="h6">Generation of dynamic web pages</h2>
+<br>
+A server-side dynamic web page is a web page whose construction is controlled by an application server processing server-side scripts. In server-side scripting, parameters determine how the assembly of every new web page proceeds, including the setting up of more client-side processing.
+
+A client-side dynamic web page processes the web page using HTML scripting running in the browser as it loads. JavaScript and other scripting languages determine the way the HTML in the received page is parsed into the Document Object Model, or DOM, that represents the loaded web page. The same client-side techniques can then dynamically update or change the DOM in the same way. Even though a web page can be dynamic on the client-side, it can still be hosted on a static hosting service such as GitHub Pages or Amazon S3 as long as there isn’t any server-side code included.
+
+A dynamic web page is then reloaded by the user or by a computer program to change some variable content. The updating information could come from the server, or from changes made to that page’s DOM. This may or may not truncate the browsing history or create a saved version to go back to, but a dynamic web page update using AJAX technologies will neither create a page to go back to, nor truncate the web browsing history forward of the displayed page. Using AJAX, the end user gets one dynamic page managed as a single page in the web browser while the actual web content rendered on that page can vary. The AJAX engine sits only on the browser requesting parts of its DOM, the DOM, for its client, from an application server.
+
+DHTML is the umbrella term for technologies and methods used to create web pages that are not static web pages, though it has fallen out of common use since the popularization of AJAX, a term which is now itself rarely used. Client-side-scripting, server-side scripting, or a combination of these make for the dynamic web experience in a browser.
+
+Classical hypertext navigation, with HTML or XHTML alone, provides “static” content, meaning that the user requests a web page and simply views the page and the information on that page.
+
+However, a web page can also provide a “live”, “dynamic”, or “interactive” user experience. Content (text, images, form fields, etc.) on a web page can change, in response to different contexts or conditions.
+<a href="#top">Go top</a>
+<br>
+<h2 id="h7"> Application Servers</h2>
+An application server is a server that hosts applications.[1]
+
+Application server frameworks are software frameworks for building application servers. An application server framework provides both facilities to create web applications and a server environment to run them.
+<br>
+<center><img src="What-is-Application-Server-1.jpg" height="300px" width="400px"></center>
+<br>
+An application server framework contains a comprehensive service layer model. It includes a set of components accessible to the software developer through a standard API defined for the platform itself. For Web applications, these components usually run in the same environment as their web server(s), and their main job is to support the construction of dynamic pages. However, many application servers do more than generate web pages: they implement services such as clustering, fail-over, and load-balancing, so developers can focus on implementing the business logic.[2]
+
+In the case of Java application servers, the server behaves like an extended virtual machine for running applications, transparently handling connections to the database on one side, and, often, connections to the Web client on the other.[citation needed]
+
+Other uses of the term may refer to the services that a server makes available or the computer hardware on which the services run
+<br>There are a lot of factors that go into web security and web protection. Any website or application that is secure is surely backed by different types of checkpoints and techniques for keeping it safe.
+
+There are a variety of security standards that must be followed at all times, and these standards are implemented and highlighted by the OWASP. Most experienced web developers from top cybersecurity companies will follow the standards of the OWASP as well as keep a close eye on the Web Hacking Incident Database to see when, how, and why different people are hacking different websites and services.
+
+Essential steps in protecting web apps from attacks include applying up-to-date encryption, setting proper authentication, continuously patching discovered vulnerabilities, avoiding data theft by having secure software development practices. The reality is that clever attackers may be competent enough to find flaws even in a fairly robust secured environment, and so a holistic security strategy is advised.
+<a href="#top">Go top</a>
+<h2 id="h8">Web Security</h2>
+<br>
+    Web security is also known as “Cybersecurity”. It basically means protecting a website or web application by detecting, preventing and responding to cyber threats.
+
+Web Security.
+Websites and web applications are just as prone to security breaches as physical homes, stores, and government locations. Unfortunately, cybercrime happens every day, and great web security measures are needed to protect websites and web applications from becoming compromised.
+
+That’s exactly what web security does – it is a system of protection measures and protocols that can protect your website or web application from being hacked or entered by unauthorized personnel. This integral division of Information Security is vital to the protection of websites, <a href="#h3">web applications</a>, and web services. Anything that is applied over the Internet should have some form of web security to protect it.
+There are a lot of factors that go into web security and web protection. Any website or application that is secure is surely backed by different types of checkpoints and techniques for keeping it safe.
+<br>
+<center><img src="https://www.goodfirms.co/glossary/wp-content/uploads/2017/08/Web-Security.png"><center>
+<br>
+There are a variety of security standards that must be followed at all times, and these standards are implemented and highlighted by the OWASP. Most experienced web developers from top cybersecurity companies will follow the standards of the OWASP as well as keep a close eye on the Web Hacking Incident Database to see when, how, and why different people are hacking different websites and services.
+
+Essential steps in protecting web apps from attacks include applying up-to-date encryption, setting proper authentication, continuously patching discovered vulnerabilities, avoiding data theft by having secure software development practices. The reality is that clever attackers may be competent enough to find flaws even in a fairly robust secured environment, and so a holistic security strategy is advised.
+<a href="#top">Go top</a>
+<br>
+<ul>
+<Li><a href="#h2">Client/Server  concepts</a></li>
+<Li><a href="#h3">Components  of  Web  Application</a></li>
+<Li><a href="#h4">Types  of Web Content</a></li>
+<Li><a href="#h5">Overview of HTTP - HTTP request – response</a></li>
+<Li><a href="#h6">Generation of dynamic web pages</a></li>
+<Li><a href="#h7">Application Server</a></li>
+<Li><a href="#h8">Web Security</a></li>
+</ul>
+</div>
+</body>
+</html>
+‍
+‍
