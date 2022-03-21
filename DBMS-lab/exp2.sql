@@ -21,7 +21,8 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('CN','China',3);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('DE','Germany',1);
-INSERT INTO countries(country_id,country_name,region_id) VALUES
+INSERT INTO countries(country_id,country_name,region_id) VALUESinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 ('DK','Denmark',1);Job_insertion
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('EG','Egypt',4);
@@ -58,7 +59,8 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES
 /*Data for the table locations */
 INSERT INTO
 locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
-INSERT INTO
+INSERT INTOinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1500,'2011 Interiors Blvd','99236','South San
 Francisco','California','US');
 INSERT INTO
@@ -256,7 +258,8 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTOJob_insertion
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (176,'Jonathon','Taylor','jonathon.taylor@sqltutorial.org',NULL,'1998-03-
-24',16,8600.00,100,8);Job_insertion
+24',16,8600.00,100,8);Job_insertioninsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (177,'Jack','Livingston','jack.livingston@sqltutorial.org',NULL,'1998-04-
@@ -273,7 +276,8 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTOJob_insertion
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (192,'Sarah','Bell','sarah.bell@sqltutorial.org','650.501.1876','1996-02-Job_insertion
-04',17,4000.00,123,5);
+04',17,4000.00,123,5);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 INSERT INTOJob_insertion
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (193,'Britney','Everett','britney.everett@sqltutorial.org','650.501.2876','1997-
@@ -290,7 +294,8 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (202,'Pat','Fay','pat.fay@sqltutorial.org','603.123.6666','1997-08-
-17',11,6000.00,201,2);
+17',11,6000.00,201,2);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (203,'Susan','Mavris','susan.mavris@sqltutorial.org','515.123.7777','1994-06-
@@ -307,7 +312,8 @@ INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (206,'William','Gietz','william.gietz@sqltutorial.org','515.123.8181','1994-06-
 07',1,8300.00,205,11);
-
+insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 /*Data for the table dependents */
 
 INSERT INTO
@@ -325,7 +331,8 @@ VALUES (4,'Jennifer','King','Child',100);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (5,'Johnny','Kochhar','Child',101);
-INSERT INTO
+INSERT INTOinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (6,'Bette','De Haan','Child',102);
 INSERT INTO
@@ -340,7 +347,8 @@ dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (9,'Joe','Sciarra','Child',111);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
-VALUES (10,'Christian','Urman','Child',112);
+VALUES (10,'Christian','Urman','Child',112);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (11,'Zero','Popp','Child',113);
@@ -390,7 +398,8 @@ VALUES (25,'Kevin','Himuro','Child',118);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (26,'Rip','Colmenares','Child',119);
-
+insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (27,'Julia','Raphaely','Child',114);
@@ -402,9 +411,17 @@ dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (29,'Alec','Partners','Child',146);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
-VALUES (30,'Sandra','Taylor','Child',176);
+VALUES (30,'Sandra','Taylor','Child',176);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 
-select country_name as Coutries from countries;
+select country_name as Coutries from countries;insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';insert into employees values(207insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';insert into employees values(207,'insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 select employee_id as Employee,email,phone_number from employees;
 select * from employees where last_name like 'Fay';
 select first_name,last_name,hire_date from employees where last_name like 'Grant' or 'Whalen';
@@ -414,5 +431,7 @@ select department_name as Departments from departments order by department_name 
 select first_name,last_name from employees where last_name like 'K%';
 select job_title as JOBS,min_salary from jobs where min_salary<5000;
 select lower(email) from employees;
-select first_name from employees where hire_date like '1995-';*/
+select first_name from employees where hire_date like '1995-';
+insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
+delete from departments where department_name='shipping';
 
