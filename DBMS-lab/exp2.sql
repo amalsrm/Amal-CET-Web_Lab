@@ -15,29 +15,28 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('BR','Brazil',2);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('CA','Canada',2);
-INSERT INTO countries(country_id,country_name,region_id) VALUESJob_insertion
+INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('CH','Switzerland',1);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('CN','China',3);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('DE','Germany',1);
-INSERT INTO countries(country_id,country_name,region_id) VALUESinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
-('DK','Denmark',1);Job_insertion
+INSERT INTO countries(country_id,country_name,region_id) VALUES
+('DK','Denmark',1);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('EG','Egypt',4);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('FR','France',1);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('HK','HongKong',3);
-INSERT INTO countries(country_id,country_name,region_id) VALUESJob_insertion
+INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('IL','Israel',4);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('IN','India',3);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('IT','Italy',1);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
-('JP','Japan',3);Job_insertion
+('JP','Japan',3);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('KW','Kuwait',4);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
@@ -53,14 +52,13 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('US','United States of America',2);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
-('ZM','Zambia',4);Job_insertion
+('ZM','Zambia',4);
 INSERT INTO countries(country_id,country_name,region_id) VALUES
 ('ZW','Zimbabwe',4);
 /*Data for the table locations */
 INSERT INTO
 locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
-INSERT INTOinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+INSERT INTO
 locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (1500,'2011 Interiors Blvd','99236','South San
 Francisco','California','US');
 INSERT INTO
@@ -73,8 +71,8 @@ INSERT INTO
 locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (2500,'Magdalen Centre, The Oxford Science Park','OX9
 9ZB','Oxford','Oxford','UK');
 INSERT INTO
-locations(location_id,street_address,postal_code,city,state_province,country_id) VJob_insertionAJob_insertionLUES (2700,'Schwanthalerstr. 7031','80925','Munich','Bavaria','DE');
-Job_insertion
+locations(location_id,street_address,postal_code,city,state_province,country_id) VALUES (2700,'Schwanthalerstr. 7031','80925','Munich','Bavaria','DE');
+
 /*Data for the table jobs */
 
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (1,'Public
@@ -90,7 +88,7 @@ INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
 (6,'Accountant',4200.00,9000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (7,'Finance
-Manager',8200.00,16000.00);Job_insertion
+Manager',8200.00,16000.00);
 
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (8,'Human
 Resources Representative',4000.00,9000.00);
@@ -103,11 +101,11 @@ INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (12,'Public
 Relations Representative',4500.00,10500.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
-(13,'Purchasing Clerk',2500.00,5500.00);Job_insertion
+(13,'Purchasing Clerk',2500.00,5500.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
 (14,'Purchasing Manager',8000.00,15000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (15,'Sales
-Manager',10000.00,20000.00);Job_insertion
+Manager',10000.00,20000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES (16,'Sales
 Representative',6000.00,12000.00);
 INSERT INTO jobs(job_id,job_title,min_salary,max_salary) VALUES
@@ -157,7 +155,7 @@ Haan','lex.de haan@sqltutorial.org','515.123.4569','1993-01-
 13',5,17000.00,100,9);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(103,'Alexander','Hunold','alexander.hunold@sqltutorial.org','590.423.4567','1Job_insertion
+(103,'Alexander','Hunold','alexander.hunold@sqltutorial.org','590.423.4567','1
 990-01-03',9,9000.00,102,6);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
@@ -176,7 +174,7 @@ INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (107,'Diana','Lorentz','diana.lorentz@sqltutorial.org','590.423.5567','1999-02-
 07',9,4200.00,103,6);
-INSERT INTOJob_insertion
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (108,'Nancy','Greenberg','nancy.greenberg@sqltutorial.org','515.124.4569','1
 994-08-17',7,12000.00,101,10);
@@ -190,7 +188,7 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 28',6,8200.00,108,10);
 
 INSERT INTO
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salaJob_insertionry,manager_id,department_id) VALUES
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (111,'Ismael','Sciarra','ismael.sciarra@sqltutorial.org','515.124.4369','1997-09-
 30',6,7700.00,108,10);
 INSERT INTO
@@ -208,22 +206,22 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (115,'Alexander','Khoo','alexander.khoo@sqltutorial.org','515.127.4562','1995
--05-18',13,3100.00,114,3);Job_insertionJob_insertionJob_insertion
-INSERT INTOJob_insertion
+-05-18',13,3100.00,114,3);
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(116,'Shelli','Baida','shelli.baida@sqltutorial.org','515.127.4563','1997-12-Job_insertion
+(116,'Shelli','Baida','shelli.baida@sqltutorial.org','515.127.4563','1997-12-
 24',13,2900.00,114,3);
 
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (117,'Sigal','Tobias','sigal.tobias@sqltutorial.org','515.127.4564','1997-07-
-24',13,2800.00,114,3);Job_insertion
-INSERT INTOJob_insertion
+24',13,2800.00,114,3);
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (118,'Guy','Himuro','guy.himuro@sqltutorial.org','515.127.4565','1998-11-
 15',13,2600.00,114,3);
 INSERT INTO
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,mJob_insertionanager_id,department_id) VALUES
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (119,'Karen','Colmenares','karen.colmenares@sqltutorial.org','515.127.4566','
 1999-08-10',13,2500.00,114,3);
 INSERT INTO
@@ -242,49 +240,47 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (123,'Shanta','Vollman','shanta.vollman@sqltutorial.org','650.123.4234','1997-
-10-10',19,6500.00,100,5);Job_insertionJob_insertionJob_insertion
-INSERT INTOJob_insertion
+10-10',19,6500.00,100,5);
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (126,'Irene','Mikkilineni','irene.mikkilineni@sqltutorial.org','650.124.1224','19
-98-09-28',18,2700.00,120,5);Job_insertion
+98-09-28',18,2700.00,120,5);
 INSERT INTO
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_idJob_insertion) VALUES
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (145,'John','Russell','john.russell@sqltutorial.org',NULL,'1996-10-
 01',15,14000.00,100,8);
-INSERT INTOJob_insertion
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_idJob_insertion) VALUES
+INSERT INTO
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (146,'Karen','Partners','karen.partners@sqltutorial.org',NULL,'1997-01-
 05',15,13500.00,100,8);
-INSERT INTOJob_insertion
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (176,'Jonathon','Taylor','jonathon.taylor@sqltutorial.org',NULL,'1998-03-
-24',16,8600.00,100,8);Job_insertioninsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+24',16,8600.00,100,8);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (177,'Jack','Livingston','jack.livingston@sqltutorial.org',NULL,'1998-04-
-23',16,8400.00,100,8);Job_insertionJob_insertion
+23',16,8400.00,100,8);
 
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(178,'Kimberely','Grant','kimberely.grant@sqltutorial.org',NULL,'1999-05-Job_insertion
+(178,'Kimberely','Grant','kimberely.grant@sqltutorial.org',NULL,'1999-05-
 24',16,7000.00,100,8);
-INSERT INTOJob_insertionJob_insertion
+INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (179,'Charles','Johnson','charles.johnson@sqltutorial.org',NULL,'2000-01-
 04',16,6200.00,100,8);
-INSERT INTOJob_insertion
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(192,'Sarah','Bell','sarah.bell@sqltutorial.org','650.501.1876','1996-02-Job_insertion
-04',17,4000.00,123,5);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
-INSERT INTOJob_insertion
-employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(193,'Britney','Everett','britney.everett@sqltutorial.org','650.501.2876','1997-
-03-03',17,3900.00,123,5);Job_insertionJob_insertion
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(200,'Jennifer','Whalen','jennifer.whalen@sqltutorial.org','515.123.4444','198Job_insertion
+(192,'Sarah','Bell','sarah.bell@sqltutorial.org','650.501.1876','1996-02-
+04',17,4000.00,123,5);
+INSERT INTO
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
+(193,'Britney','Everett','britney.everett@sqltutorial.org','650.501.2876','1997-
+03-03',17,3900.00,123,5);
+INSERT INTO
+employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
+(200,'Jennifer','Whalen','jennifer.whalen@sqltutorial.org','515.123.4444','198
 7-09-17',3,4400.00,101,1);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
@@ -294,8 +290,7 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (202,'Pat','Fay','pat.fay@sqltutorial.org','603.123.6666','1997-08-
-17',11,6000.00,201,2);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+17',11,6000.00,201,2);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (203,'Susan','Mavris','susan.mavris@sqltutorial.org','515.123.7777','1994-06-
@@ -306,14 +301,13 @@ employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,s
 06-07',12,10000.00,101,7);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
-(205,'Shelley','Higgins','shelley.higgins@sqltutorial.org','515.123.8080','1994-Job_insertion
+(205,'Shelley','Higgins','shelley.higgins@sqltutorial.org','515.123.8080','1994-
 06-07',2,12000.00,101,11);
 INSERT INTO
 employees(employee_id,first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (206,'William','Gietz','william.gietz@sqltutorial.org','515.123.8181','1994-06-
 07',1,8300.00,205,11);
-insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+
 /*Data for the table dependents */
 
 INSERT INTO
@@ -331,8 +325,7 @@ VALUES (4,'Jennifer','King','Child',100);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (5,'Johnny','Kochhar','Child',101);
-INSERT INTOinsert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (6,'Bette','De Haan','Child',102);
 INSERT INTO
@@ -347,12 +340,11 @@ dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (9,'Joe','Sciarra','Child',111);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
-VALUES (10,'Christian','Urman','Child',112);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+VALUES (10,'Christian','Urman','Child',112);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (11,'Zero','Popp','Child',113);
-INSERT INTOJob_insertion
+INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (12,'Karl','Greenberg','Child',108);
 INSERT INTO
@@ -398,8 +390,7 @@ VALUES (25,'Kevin','Himuro','Child',118);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (26,'Rip','Colmenares','Child',119);
-insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (27,'Julia','Raphaely','Child',114);
@@ -411,17 +402,9 @@ dependents(dependent_id,first_name,last_name,relationship,employee_id)
 VALUES (29,'Alec','Partners','Child',146);
 INSERT INTO
 dependents(dependent_id,first_name,last_name,relationship,employee_id)
-VALUES (30,'Sandra','Taylor','Child',176);insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+VALUES (30,'Sandra','Taylor','Child',176);
 
-select country_name as Coutries from countries;insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';insert into employees values(207insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';insert into employees values(207,'insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
-delete from departments where department_name='shipping';
+select country_name as Coutries from countries;
 select employee_id as Employee,email,phone_number from employees;
 select * from employees where last_name like 'Fay';
 select first_name,last_name,hire_date from employees where last_name like 'Grant' or 'Whalen';
@@ -429,9 +412,9 @@ select first_name as Name from employees where job_id = 17;
 select first_name as Name from employees where department_id = 8;
 select department_name as Departments from departments order by department_name desc;
 select first_name,last_name from employees where last_name like 'K%';
+select first_name from employees where year(hire_date) between 1995 and 1998;
 select job_title as JOBS,min_salary from jobs where min_salary<5000;
 select lower(email) from employees;
 select first_name from employees where hire_date like '1995-';
 insert into employees values(207,'Paul','Newton','paulnewton@gmail.com','515.123.8181','1994-06-07',1,8300.00,null,11);
 delete from departments where department_name='shipping';
-
