@@ -20,4 +20,4 @@ update={"$set":{"vaccination_status":"Both vaccinated"}}
 coll.update_one(mysql,update)
 
 for x in coll.find().sort("Lab_mark.External",-1):
-	print(x["name"])S
+	print(x["name"])
